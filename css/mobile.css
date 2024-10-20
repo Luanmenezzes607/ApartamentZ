@@ -1,0 +1,56 @@
+@media screen and  (max-width: 767px){
+    nav ul{
+        display: none;
+    }
+
+    .logo h1{
+        font-size: 20px;
+    }
+
+    .container, nav, footer{
+        width: 90%;
+        overflow: hidden;
+    }
+
+    /*========================section one=======================*/
+
+    .sec-one{
+        height: auto;
+        padding-bottom: 40px;
+    }
+
+    .sec-one .container{
+        flex-direction: column;
+        padding-top: 40px;
+    }
+
+    .section-info #p{
+        margin: 20px 0px 0px;
+    }
+
+    .section-info{
+        margin: 0px;
+        width: 100%;
+        align-items: center;
+    }
+
+    .section-info h1{
+        font-size: 50px;
+    }
+
+    .infos{
+        width: 80%;
+        gap: 30px;
+        margin: 30px auto;
+    }
+
+    .btns{
+        padding: 10px 20px;
+        margin-top: 0px;
+        gap: 20px;
+    }
+
+    .section-image img{
+        display: none;
+    }
+}
