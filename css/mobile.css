@@ -53,4 +53,32 @@
     .section-image img{
         display: none;
     }
+
+    /*========================section two=======================*/
+
+    .sec-two .container{
+        height: auto;
+        padding-bottom: 130px;
+    }
+
+    .cards{
+        width: 700%;
+        margin: 0px;
+    }
+
+    .card{
+        margin-right: 40px;
+        height: 400px;
+        width: 500px;
+    }
+
+    .card p{
+        margin: -10px 0px 14px 0px;
+    }
+
+    .btn-icons{
+        bottom: 10;
+        left: 11%;
+     }
+    
 }
