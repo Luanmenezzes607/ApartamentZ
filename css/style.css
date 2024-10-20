@@ -1,0 +1,607 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Red Hat Display", sans-serif;
+}
+
+:root{
+    --primary-color: #72B944;
+    --secundary-color: #262626;
+    --tertiary-color: #F4FAF0;
+    --white-color: #ffffff;
+    --black-color: #000000;
+    --green-color: #73b9443b;
+    --text-color: #717D7D;
+}
+
+header{
+    background-color: var(--primary-color)
+}
+
+nav{
+    width: 80%;
+    display: flex;align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    padding: 20px 0px;
+}
+
+nav .logo h1{
+    font-size: 27px;
+    font-weight: bolder;
+}
+
+nav .logo h1 span{
+    color: var(--white-color);
+    margin-left: 2px;
+}
+
+nav ul{
+    display: flex;
+    gap: 50px;
+}
+
+nav ul li a{
+    color: var(--white-color);
+    font-weight: 500;
+}
+
+nav ul li a::after{
+    content: "";
+    background-color:#263238;
+    height: 3px;
+    width: 0px;
+    display: block;
+    transition: .3s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+    margin: 0px auto;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+    padding: 50px 0px;
+}
+
+/*========================section one=======================*/
+.sec-one{
+    height: calc(100vh - 75px);
+    background-color: var(--tertiary-color);
+}
+
+.sec-one .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    padding: 0px;
+}
+
+.section-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    margin: 0px 30px 0px 130px;
+}
+
+.section-info h1{
+    font-size: 70px;
+}
+
+.section-info h1 span{
+    color: var(--primary-color);
+}
+
+.section-info p{
+    color: var(--text-color);
+}
+
+.infos{
+    display: flex;
+    gap: 50px;
+    margin: 50px 0px;
+}
+
+.btns{
+    display: flex;
+    margin-top: 30px;
+    gap: 30px;
+}
+
+.btns #btn-one{
+    padding: 15px 30px;
+    background-color: transparent;
+    color: var(--white-color);
+    border-radius: 30px;
+    border: 2px solid #72B944;
+    cursor: pointer;
+    color: var(--black-color);
+    transition: .3s;
+}
+
+.btns #btn-one:hover{
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    scale: 1.1;
+}
+
+.btns #btn-two{
+    padding: 15px 30px;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.btns #btn-two:hover{
+    background-color: #509024;
+    scale: 1.1;
+}
+
+.section-image{
+    width: 60%;
+    height: 100%;
+}
+
+.section-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*========================section two=======================*/
+
+.sec-two .container{
+    overflow:  hidden;
+    height: 100vh;
+}
+
+.sec-two{
+    background-color: var(--secundary-color);
+}
+
+.sec-two h2{
+    color: var(--white-color);
+    font-size: 40px;
+    margin:0px 0px 30px 50px;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-between;
+    width: 200%;
+    gap: 50px;
+    margin-left: 20px;
+}
+
+.card{
+    width: 30%;
+    margin: 20px;
+    position: relative;
+    border-radius: 15px;
+}
+
+.card-infos{
+    position: absolute;
+    color: #ffffff;
+    z-index: 2;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 90%;
+}
+
+.card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card p{
+    margin: 10px 0px;
+}
+
+.info-flex{
+    display: flex;
+    gap: 30px;
+}
+
+.info-flex p:nth-child(2){
+    font-weight: bold;
+}
+
+.btn-icons{
+   position: absolute;
+   right: 12%;
+}
+
+.btn-icons i{
+    font-size: 50px;
+    background-color: #72B944;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    margin:30px 30px 0px 0px;
+    cursor: pointer;
+}
+
+/*========================section tree=======================*/
+.sec-tree .container{
+    text-align: center;
+}
+
+.sec-tree p{
+    color: var(--text-color);
+    margin: 30px 0px;
+    font-size: 20px;
+}
+
+.sec-tree h2{
+    font-size: 45px;
+}
+
+.image-infos{
+    position: relative;
+}
+
+.image-infos img{
+    width: 100%;
+}
+
+.sec-tree .info{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%);
+    text-align: left;
+    width: 45%;
+    color: var(--white-color);
+}
+
+.sec-tree .info p{
+    margin: 10px 0px 30px;
+    color: var(--white-color);
+}
+
+.btn-tree-for{
+    padding: 15px 30px;
+    background-color: transparent;
+    color: var(--white-color);
+    border-radius: 30px;
+    border: 2px solid #ffffff;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.btn-tree-for:hover{
+    background-color: var(--white-color);
+    color: var(--black-color);
+    scale: 1.1;
+}
+
+/*========================section for=======================*/
+.sec-for{
+    background-color: var(--green-color);
+}
+
+.sec-for .container{
+    text-align: center;
+}
+
+.sec-for p{
+    color: var(--text-color);
+    margin: 30px 0px;
+    font-size: 20px;
+}
+
+.sec-for h2{
+    font-size: 45px;
+}
+
+.image-infos{
+    position: relative;
+}
+
+.image-infos img{
+    width: 100%;
+}
+
+.sec-for .info{
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    text-align: left;
+    width: 45%;
+    color: var(--white-color);
+}
+
+.sec-for .info p{
+    margin: 10px 0px 30px;
+    color: var(--white-color);
+}
+
+.btn-tree-for{
+    padding: 15px 30px;
+    background-color: transparent;
+    color: var(--white-color);
+    border-radius: 30px;
+    border: 2px solid #ffffff;
+    cursor: pointer;
+}
+
+.sec-five .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.sec-five .container article{
+    height: 250px;
+    border-radius: 20px;
+}
+
+.sec-five .container article:nth-child(4){
+    background-color: var(--secundary-color);
+}
+
+.text-article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.text-article h2{
+    font-size: 45px;
+}
+
+.text-article p{
+    font-size: 20px;
+    color: var(--text-color);
+    margin-top: 20px;
+}
+
+.image-article{
+    overflow: hidden;
+}
+
+.image-article img{
+    width: 101%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.ad-article{
+    padding: 20px;
+    text-align: center;
+    color: var(--white-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #72B944;
+}
+
+.ad-article h3{
+    font-size: 30px;
+}
+
+.ad-article p{
+    margin: 20px 30px;
+}
+
+.ad-article .btn{
+    padding: 15px 30px;
+    border-radius: 30px;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.ad-article .btn:hover{
+    scale: 1.1;
+}
+
+/*========================section six=======================*/
+
+.sec-six{
+    background-color: var(--green-color);
+    height: 100vh;
+}
+
+.sec-six .container{
+    height: 100%;
+}
+
+.sec-six h2{
+    font-size: 45px;
+    text-align: center;
+}
+
+.sec-six p{
+    color: var(--text-color);
+    margin: 30px 0px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.sec-six .cards {
+    width: 100%;
+    height: 370px;
+}
+
+.sec-six .card{
+    background-color: #72B944;;
+    padding: 0px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--white-color);
+}
+
+.sec-six .card h3{
+    font-size: 25px;
+}
+
+.sec-six .card p{
+    color: var(--white-color);
+    font-size: 16px;
+    margin: 10px 0px;
+    font-weight: 100;
+}
+
+.sec-six .card button{
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    font-weight: 500;
+    margin: 30px 0px;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.sec-six .card button:hover{
+    scale: 1.1;
+}
+
+.sec-six .card img{
+   width: 225px;
+   height: 150px;
+   margin-top: 10px;
+}
+
+.sec-seven .container{
+    background-color: var(--primary-color);
+    margin: 100px auto;
+    text-align: center;
+    padding: 90px 0px;
+    border-radius: 50px;
+}
+
+.sec-seven .container h2{
+    font-size: 40px;
+    color: var(--white-color);
+}
+
+.sec-seven .container p{
+    margin: 25px 0px;
+    color: var(--white-color);
+    font-size: 15px;
+}
+
+.sec-seven .container input{
+    padding: 15px;
+    width: 37%;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background-color: #ffffff81;
+    margin-right: 20px;
+}
+
+.sec-seven .container input::placeholder{
+    color: var(--white-color);
+    font-weight: 500;
+    padding-left: 15px;
+}
+
+.sec-seven .container button{
+    padding: 15px 25px;
+    border-radius: 10px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.sec-seven .container button:hover{
+    background-color: lightgray;
+    scale: 1.1;
+}
+
+footer{
+    background-color: var(--secundary-color);
+    height: 100vh;
+}
+
+footer .container{
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+footer h2{
+    font-size: 30px;
+    color: var(--white-color);
+}
+
+footer h2 span{
+    color: var(--primary-color);
+}
+
+footer p, h3{
+    color: var(--white-color);
+    margin: 15px 0px;
+}
+
+.contact-infos{
+    width: 23%;
+}
+
+.footer-infos{
+    display: flex;
+    gap: 32px;
+}
+
+.icons{
+    display: flex;
+    gap: 10px;
+    font-size: 20px;
+    margin: 50px 0px;
+    color: var(--primary-color);
+}
+
+.contact-infos i{
+    margin-right: 15px
+}
+
+.footer-infos ul li h3{
+    color: var(--primary-color);
+    font-weight: 100;
+}
+
+.footer-infos ul li{
+    color: var(--white-color);
+    font-weight: 100;
+    margin: 10px 0px;
+}
+
+.end{
+    border-top: 1px solid #fff;
+    margin-top: 40px;
+}
+
+.end p{
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 100;
+}
+
