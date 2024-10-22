@@ -170,6 +170,7 @@ nav ul li a:hover::after{
 
 .sec-two{
     background-color: var(--secundary-color);
+    padding-bottom: 30px;
 }
 
 .sec-two h2{
@@ -422,7 +423,6 @@ nav ul li a:hover::after{
 
 .sec-six{
     background-color: var(--green-color);
-    height: 100vh;
 }
 
 .sec-six .container{
@@ -538,7 +538,6 @@ nav ul li a:hover::after{
 
 footer{
     background-color: var(--secundary-color);
-    height: 100vh;
 }
 
 footer .container{
@@ -597,6 +596,7 @@ footer p, h3{
 .end{
     border-top: 1px solid #fff;
     margin-top: 40px;
+    padding-bottom: 15px;
 }
 
 .end p{

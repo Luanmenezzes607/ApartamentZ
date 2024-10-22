@@ -80,5 +80,68 @@
         bottom: 10;
         left: 11%;
      }
-    
+
+     .sec-tree h2{
+        font-size: 30px;
+    }
+
+
+    /*========================section tree=======================*/
+
+    .sec-tree .info h2{
+        font-size: 20px;
+    }
+
+    .sec-tree p{
+        font-size: 16px;
+        margin: 20px 0;
+    }
+
+    .sec-tree .info{
+        width: 70%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 30px 0px;
+        text-align: center;
+    }
+
+    .sec-tree .info p{
+        font-size: 12px;
+        margin: 0;
+    }
+
+    .btn-tree-for{
+        padding: 7px 14px;
+        font-size: 12px;
+        margin: 10px 0px;
+    }
+
+    /*========================section for=======================*/
+
+    .sec-for h2{
+        font-size: 30px;
+    }
+
+     .sec-for .info h2{
+        font-size: 20px;
+    }
+
+    .sec-for p{
+        font-size: 16px;
+        margin: 20px 0;
+    }
+
+    .sec-for .info{
+        width: 90%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 30px 0px;
+        text-align: center;
+    }
+
+    .sec-for .info p{
+        font-size: 12px;
+        margin: 0px  0;
+    }
+
 }
