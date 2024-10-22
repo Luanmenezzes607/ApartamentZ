@@ -144,4 +144,73 @@
         margin: 0px  0;
     }
 
+        /*========================section five=======================*/
+
+    .sec-five .container{
+        grid-template-columns: 1fr;
+        text-align: center;
+        
+    }
+    
+    .text-article h2{
+        font-size: 30px;
+    }
+
+    .ad-article h3{
+        font-size: 20px;
+    }
+
+    .ad-article p{
+        margin: 0px 0px 20px 0px;
+        padding: 0px 10px;
+    }
+
+    /*========================section six=======================*/
+
+    .sec-six .cards {
+       display: flex;
+       flex-direction: column;
+       height: auto;
+       gap: 0;
+    }
+
+    .sec-six .card{
+        width: 90%;
+    }
+
+    .sec-six h2{
+        font-size: 30px;
+    }
+
+    .sec-six p{
+        margin: 15px 0px;
+    }
+    
+    .sec-six .card p{
+        margin: 0px;
+    }
+    
+    .sec-six .card{
+        height: auto;
+        padding: 20px;
+    }
+
+    /*===============sec seven==============*/
+
+    .sec-seven .container{
+        padding: 20px;
+    }
+
+    .form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .sec-seven .container input{
+        width: 80%;
+        margin: auto;
+    }
+    
 }

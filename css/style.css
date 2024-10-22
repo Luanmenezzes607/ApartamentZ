@@ -344,6 +344,8 @@ nav ul li a:hover::after{
     cursor: pointer;
 }
 
+    /*========================section five=======================*/
+
 .sec-five .container{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -487,6 +489,8 @@ nav ul li a:hover::after{
    height: 150px;
    margin-top: 10px;
 }
+
+/*===============sec seven==============*/
 
 .sec-seven .container{
     background-color: var(--primary-color);
